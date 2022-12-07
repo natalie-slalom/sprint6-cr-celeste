@@ -16,4 +16,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/sprint6-cr-celeste.jar
+    - target/api-0.0.1-SNAPSHOT.war
