@@ -18,3 +18,4 @@ artifacts:
   files:
     - target/api-0.0.1-SNAPSHOT.war
     - appspec.yml
+    - scripts/runapp.sh
