@@ -29,6 +29,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                sh '''#!/bin/bash
                 aws deploy create-deployment \
                     --region us-east-1 \
                     --application-name sprint6-cr-celeste-codedeploy \
@@ -37,6 +38,7 @@ pipeline {
                     --description "My demo deployment" \
                     --s3-location bucket=sprint6-cr-celeste-artifact,bundleType=zip,key=sprint6-cr-celeste.zip
                echo 'This is the deploy stage.'
+               '''
             }
         }
     }
