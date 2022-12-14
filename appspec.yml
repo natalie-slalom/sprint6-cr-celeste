@@ -6,7 +6,7 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/beforeinstall.sh
-    - timeout: 60
+      timeout: 60
   AfterInstall:
     - location: scripts/runapp.sh
       timeout: 60
