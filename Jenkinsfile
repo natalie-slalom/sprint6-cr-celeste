@@ -32,7 +32,7 @@ pipeline {
                 aws deploy create-deployment \
                     --application-name sprint6-cr-celeste-codedeploy \
                     --deployment-config-name CodeDeployDefault.OneAtATime \
-                    --deployment-group-name sprint6-cr-celeste-deployment-group \
+                    --deployment-group-name {sprint6-cr-celeste-deployment-group} \
                     --description "My demo deployment" \
                     --s3-location bucket=sprint6-cr-celeste-artifact,bundleType=zip,key=sprint6-cr-celeste.zip
                echo 'This is the deploy stage.'
