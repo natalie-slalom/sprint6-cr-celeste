@@ -4,6 +4,9 @@ files:
   - source: target/api-0.0.1-SNAPSHOT.war
     destination: /usr/share/tomcat/webapps
 hooks:
+  BeforeInstall:
+    - location: scripts/beforeinstall.sh
+    - timeout: 60
   AfterInstall:
     - location: scripts/runapp.sh
       timeout: 60
